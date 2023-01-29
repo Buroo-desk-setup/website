@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="icon" href="./images/logo.png">
+  <title>Buroo | Blog</title>
+</head>
+
+<body>
+  <nav x-data="{ isOpen: false }" class="relative text-gray-600 bg-white shadow">
+    <div class="container p-5 mx-auto md:flex md:justify-between md:items-center">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="/" class="flex title-font font-medium items-center text-gray-900 my-auto md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+              viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Buroo</span>
+          </a>
+        </div>
+
+        <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="flex md:hidden px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button x-cloak @click="isOpen = !isOpen" type="button"
+            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+            <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+            </svg>
+
+            <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="hidden md:flex px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+      <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full']"
+        class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center drop-shadow-md">
+        <nav class="md:ml-auto flex-col md:flex-row md:mx-6 flex flex-wrap items-center text-base justify-center">
+          <a href="/blog/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Blog</a>
+          <a href="/about/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Over ons</a>
+        </nav>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="bg-white dark:bg-gray-900">
+  <div class="container px-6 py-10 mx-auto">
+    <div class="text-center">
+      <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">From the blog</h1>
+
+      <p class="max-w-lg mx-auto mt-4 text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt, laudantium
+        quia tempore delect
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+      
+        <div>
+          <img class="relative z-10 object-cover w-full rounded-md h-96"
+            src="https://images.unsplash.com/photo-1527800792452-506aacb2101f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="">
+
+          <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="/posts/beeldschermen/" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+              Beeldschermen
+            </a>
+
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+              Dit artikel gaat over verschillende soorten monitoren, waaronder CRT, LCD, LED, OLED, IPS en 4K/5K. Het benadrukt dat elke monitor unieke functies en mogelijkheden heeft. De lezer wordt aangermoedigd om hun specifieke behoeften en voorkeuren in overweging te nemen bij het kiezen van een monitor.  
+            </p>
+
+            <p class="mt-3 text-sm text-blue-500">29 Januarie 2023</p>
+          </div>
+        </div>
+      
+        <div>
+          <img class="relative z-10 object-cover w-full rounded-md h-96"
+            src="https://images.unsplash.com/photo-1618586810102-aaa7049200c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="">
+
+          <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="/posts/customkeyboard/" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+              Custom keyboard
+            </a>
+
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+              Aangepaste mechanische toetsenborden worden steed meer populaire onder de computer enthousiastelingen en gamers, vanwege de hoge mate van aanpassing en verbeterde typervaring.
+            </p>
+
+            <p class="mt-3 text-sm text-blue-500">29 Januarie 2023</p>
+          </div>
+        </div>
+      
+        <div>
+          <img class="relative z-10 object-cover w-full rounded-md h-96"
+            src="https://images.unsplash.com/photo-1631749352438-7d576312185d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80"
+            alt="">
+
+          <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="/posts/muizen/" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+              Muizen
+            </a>
+
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+              Dit artikel gaat over de verschillende soorten computermuizen die beschikbaar zijn, zoals traditionele optische muizen, lasermuizen, touchpad muizen, gaming muizen en professionele grafische muizen. Het bespreekt de unieke functies en specificaties van elk type muis. Het beveelt aan om je specifieke behoeften in overweging te nemen bij de keuze van een muis.
+            </p>
+
+            <p class="mt-3 text-sm text-blue-500">29 Januarie 2023</p>
+          </div>
+        </div>
+      
+        <div>
+          <img class="relative z-10 object-cover w-full rounded-md h-96"
+            src="https://images.unsplash.com/photo-1622579522120-85a1669d76b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="">
+
+          <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="/posts/zitsta/" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+              Zit sta bureau
+            </a>
+
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+              Het artikel gaat over de voordelen van het gebruik van een zit-sta bureau voor gezondheid en productiviteit. Het bespreekt hoe een zit-sta bureau kan bijdragen aan een betere houding, bloedcirculatie, energiebalans, concentratie en productiviteit. Er wordt ook besproken dat er verschillende soorten zit-sta bureau's beschikbaar zijn en dat het belangrijk is om rekening te houden met persoonlijke voorkeuren en de grootte van de werkplek bij de keuze voor een bureau.
+            </p>
+
+            <p class="mt-3 text-sm text-blue-500">29 Januarie 2023</p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+<!-- <div class="flex">
+  <a href="#"
+    class="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md cursor-not-allowed rtl:-scale-x-100 dark:bg-gray-800 dark:text-gray-600">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+        clip-rule="evenodd" />
+    </svg>
+  </a>
+
+  <a href="#"
+    class="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    1
+  </a>
+
+  <a href="#"
+    class="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    2
+  </a>
+
+  <a href="#"
+    class="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    ...
+  </a>
+
+  <a href="#"
+    class="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    9
+  </a>
+
+  <a href="#"
+    class="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    10
+  </a>
+
+  <a href="#"
+    class="flex items-center justify-center px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md rtl:-scale-x-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+        clip-rule="evenodd" />
+    </svg>
+  </a>
+</div> -->
+  </main>
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Buroo</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        Buroo —
+        <a href="https://twitter.com/jellewijma" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@jellewijma</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>

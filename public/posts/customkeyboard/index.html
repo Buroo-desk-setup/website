@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="icon" href="./images/logo.png">
+  <title>Custom keyboard</title>
+</head>
+
+<body>
+  <nav x-data="{ isOpen: false }" class="relative text-gray-600 bg-white shadow">
+    <div class="container p-5 mx-auto md:flex md:justify-between md:items-center">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="/" class="flex title-font font-medium items-center text-gray-900 my-auto md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+              viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Buroo</span>
+          </a>
+        </div>
+
+        <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="flex md:hidden px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button x-cloak @click="isOpen = !isOpen" type="button"
+            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+            <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+            </svg>
+
+            <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="hidden md:flex px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+      <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full']"
+        class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center drop-shadow-md">
+        <nav class="md:ml-auto flex-col md:flex-row md:mx-6 flex flex-wrap items-center text-base justify-center">
+          <a href="/blog/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Blog</a>
+          <a href="/about/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Over ons</a>
+        </nav>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    
+<div class="container px-6 py-10 mx-auto">
+  <h1 class="text-4xl font-bold">Custom keyboard</h1>
+  <hr class="border-black">
+  <br>
+  
+<p>
+  Aangepaste mechanische toetsenborden zijn een populaire keuze onder computer enthousiastelingen en gamers vanwege hun hoge mate van aanpassing en verbeterde typervaring. Deze toetsenborden gebruiken mechanische schakelaars, die bekend staan ​​om hun duurzaamheid, tactiele feedback en bevredigende geluid.
+</p>
+<br>
+<p>
+  Een van de belangrijkste voordelen van aangepaste mechanische toetsenborden is de mogelijkheid om te kiezen uit een grote verscheidenheid aan schakeltypen. Elk schakeltype biedt een ander niveau van weerstand en activering, waardoor gebruikers een schakelaar kunnen vinden die bij hun specifieke typbehoeften past. Populaire schakeltypen zijn onder meer Cherry MX Blue, die een tactiele bult en hoorbare klik biedt, en Cherry MX Brown, die een tactiele bult heeft maar stiller is.
+</p>
+<br>
+<p>
+  Een ander voordeel van aangepaste mechanische toetsenborden is de mogelijkheid om de toetsen te personaliseren. Toetsen zijn de plastic hoezen die bovenop de schakelaars zitten en worden gebruikt om de toetsen te identificeren. Aangepaste toetsen kunnen worden gemaakt van een aantal materialen, waaronder ABS-plastic, PBT-plastic en zelfs metaal. Ze kunnen ook worden bedrukt met aangepaste ontwerpen of zelfs 3D-geprint om unieke en persoonlijke toetsenborden te maken.
+</p>
+<br>
+<p>
+  Daarnaast bieden aangepaste mechanische toetsenborden ook volle RGB-achtergrondverlichting, wat toestaat voor aanpasbare verlichtingseffecten en kan worden geprogrammeerd om verschillende kleuren voor verschillende toetsen weer te geven of om aan een specifiek thema te voldoen.
+</p>
+<br>
+<p>
+  Als het gaat om het bouwen van een aangepast mechanisch toetsenbord, zijn er een aantal verschillende opties beschikbaar. Gebruikers kunnen pre-gebouwde toetsenborden kopen en de toetsen of schakelaars naar wens vervangen, of ze kunnen hun eigen toetsenbord zelf bouwen met losse onderdelen. Een toetsenbord zelf bouwen kan meer tijd kosten en vereist iets meer kennis, maar biedt ook nog meer aanpassingsmogelijkheden.
+</p>
+<br>
+<p>
+  Aangepaste mechanische toetsenborden kunnen iets duurder zijn dan traditionele rubberdome-toetsenborden, maar ze bieden een niveau van aanpassing en typervaring dat niet te vinden is met
+</p>
+
+
+
+
+</div>
+
+  </main>
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Buroo</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        Buroo —
+        <a href="https://twitter.com/jellewijma" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@jellewijma</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>

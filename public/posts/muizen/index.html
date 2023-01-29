@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="icon" href="./images/logo.png">
+  <title>Muizen</title>
+</head>
+
+<body>
+  <nav x-data="{ isOpen: false }" class="relative text-gray-600 bg-white shadow">
+    <div class="container p-5 mx-auto md:flex md:justify-between md:items-center">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="/" class="flex title-font font-medium items-center text-gray-900 my-auto md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+              viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Buroo</span>
+          </a>
+        </div>
+
+        <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="flex md:hidden px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button x-cloak @click="isOpen = !isOpen" type="button"
+            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+            <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+            </svg>
+
+            <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- <input type="search" name="search" placeholder="Search" -->
+        <!-- class="hidden md:flex px-4 h-10 text-sm border border-gray-300 rounded-full focus:outline-none" /> -->
+
+      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+      <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full']"
+        class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center drop-shadow-md">
+        <nav class="md:ml-auto flex-col md:flex-row md:mx-6 flex flex-wrap items-center text-base justify-center">
+          <a href="/blog/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Blog</a>
+          <a href="/about/" class="mr-5 hover:text-gray-900 md:mx-4 md:my-0">Over ons</a>
+        </nav>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    
+<div class="container px-6 py-10 mx-auto">
+  <h1 class="text-4xl font-bold">Muizen</h1>
+  <hr class="border-black">
+  <br>
+  
+<p>
+  Computer muizen zijn een onmisbaar onderdeel van elke computergebruiker, of u nu werkt, speelt of surft op internet.
+  Er zijn echter veel verschillende soorten computermuizen op de markt, elk met hun eigen unieke set aan functies en
+  specificaties.
+</p>
+<br>
+<p>
+  De eerste categorie van muizen is de traditionele optische muis. Deze muizen gebruiken een optische sensor om de
+  beweging van de muis te detecteren. Deze muizen zijn eenvoudig te gebruiken en bieden een betrouwbare prestatie. Ze
+  zijn ook vaak goedkoper dan andere soorten muizen.
+</p>
+<br>
+<p>
+  Een andere populaire categorie van muizen zijn de lasermuizen. In tegenstelling tot optische muizen, gebruiken
+  lasermuizen een laserstraal om de beweging te detecteren. Dit resulteert in een hogere precisie en een grotere
+  oppervlakte-compatibiliteit, wat betekent dat ze op vrijwel elk oppervlak kunnen worden gebruikt.
+</p>
+<br>
+<p>
+  Er zijn ook touchpad muizen, die werken als een trackpad op een laptop. Deze muizen zijn ideaal voor degenen die een
+  groter oppervlak nodig hebben voor precieze cursorbeweging en snellere navigatie. Ze zijn ook handig voor degenen die
+  vaak onderweg zijn, omdat ze vaak in kleinere omvang zijn dan traditionele muizen.
+</p>
+<br>
+<p>
+  Er zijn ook speciaal ontworpen muizen voor specifieke toepassingen, zoals gaming muizen en professionele grafische
+  muizen. Gaming muizen zijn ontworpen met extra knoppen en programmabele knoppen voor snellere toegang tot vaak
+  gebruikte commando's. Professionele grafische muizen zijn speciaal ontworpen met precisie-tools voor het maken van
+  precieze selecties en tekeningen.
+</p>
+<br>
+<p>
+  In conclusie, er zijn veel verschillende soorten computermuizen beschikbaar, elk met hun eigen unieke set aan
+  functies en specificaties. Het is belangrijk om te overwegen wat uw specifieke behoeften zijn om de juiste muis voor u
+  te kiezen.
+</p>
+<br>
+</div>
+
+  </main>
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Buroo</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        Buroo —
+        <a href="https://twitter.com/jellewijma" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@jellewijma</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
