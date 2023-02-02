@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>/about/</loc>
+            <lastmod>2023-01-29T07:11:31.528Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/blog/</loc>
+            <lastmod>2023-01-29T07:11:31.528Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/product/</loc>
+            <lastmod>2023-01-31T20:16:43.691Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/</loc>
+            <lastmod>2023-02-02T09:47:47.006Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/beeldschermen/</loc>
+            <lastmod>2023-02-02T09:47:47.006Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/customkeyboard/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/gesprek/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/installatie/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/muizen/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/werkomgeving/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/posts/zitsta/</loc>
+            <lastmod>2023-02-02T09:47:47.010Z</lastmod>
+        </url>
+    
+</urlset>
