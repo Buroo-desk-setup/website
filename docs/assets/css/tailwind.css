@@ -1506,8 +1506,16 @@ video {
     width: 66.666667%;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:flex-nowrap {
