@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  branch: main
-media_folder:  "public/assets"
+  branch: crm
+media_folder:  "docs/assets"
 public_folder: "/assets"
 
 collections:
