@@ -3,7 +3,7 @@ title: test
 layout: "blog.njk"
 description: "Het artikel gaat over de voordelen van het gebruik van een zit-sta bureau voor gezondheid en productiviteit. Het bespreekt hoe een zit-sta bureau kan bijdragen aan een betere houding, bloedcirculatie, energiebalans, concentratie en productiviteit. Er wordt ook besproken dat er verschillende soorten zit-sta bureau's beschikbaar zijn en dat het belangrijk is om rekening te houden met persoonlijke voorkeuren en de grootte van de werkplek bij de keuze voor een bureau."
 image: "https://images.unsplash.com/photo-1622579522120-85a1669d76b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-releasedate: "29 Januari 2023"
+date: "29 Januari 2023"
 ---
 
  Er zijn steeds meer mensen die hun werkplek aanpassen naar een zit-sta bureau, omdat deze stijlvolle en flexibele meubels een groot aantal voordelen bieden voor de gezondheid en productiviteit.
