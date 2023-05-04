@@ -1,5 +1,5 @@
 ---
-title: Beeldschermen
+title: Beeldschermen 2
 description: >-
   Dit artikel gaat over verschillende soorten monitoren, waaronder CRT, LCD,
   LED, OLED, IPS en 4K/5K. Het benadrukt dat elke monitor unieke functies en
