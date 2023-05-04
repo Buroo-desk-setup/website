@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
-  branch: main
-media_folder:  "public/assets"
-public_folder: "/assets"
+  branch: crm
+media_folder:  "docs/assets"
+public_folder: "src/assets"
 
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "posts"
     folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -14,6 +14,6 @@ collections:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
       - { label: "Layout", name: "layout", widget: "string", default: "blog.njk"}
-      - { label: "Date", name: "date", widget: "datetime"}\
-      - { label: "Featured Image", name: "image", widget: "image"}
+      - { label: "Date", name: "releasedate", widget: "datetime"}
+      - { label: "Image", name: "image", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown"}
